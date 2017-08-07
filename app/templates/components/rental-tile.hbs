@@ -2,14 +2,10 @@
 <link rel="stylesheet" href="/../styles/app.css" type="text/css">
 
 <li>
-  {{rental.owner}}'s {{rental.type}} in {{rental.city}}
+  {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}
   {{#if isImageShowing}}
     <p><img src={{rental.image}} alt={{rental.type}} {{action "imageHide"}} class='housePic'></p>
   {{else}}
     <button {{action "imageShow"}} class='btn btn-success rentalButtons'>Show image</button>
   {{/if}}
-  <div class="updelate">
-    {{update-rental rental=rental update="update" class='update'}}
-    <button {{action 'delete' rental}} class='btn btn-danger rentalButtons'>Delete Rental</button>
-  </div>
 </li>

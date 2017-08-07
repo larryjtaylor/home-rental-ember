@@ -9,9 +9,9 @@
 
 <p>There's no place like home... but there's no home like Nome.</p>
 
-<ul>
+<ul class="list-unstyled">
   {{#each model as |rental|}}
-    {{rental-tile rental=rental update="update" destroyRental="destroyRental"}}<br>
+    {{rental-tile rental=rental}}<br>
   {{/each}}
 </ul>
 
