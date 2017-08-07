@@ -5,19 +5,19 @@
   <h1 id='heading'>Rentopolis</h1>
 </div>
 <div class='container'>
-<h1> Welcome to Rentopolis </h1>
+<h1>Important Announcements</h1>
 
-<p>There's no place like home... but there's no home like Nome.</p>
+<h2>Urgent information regarding your property/reservations</h2>
 
 <ul>
-  {{#each model as |rental|}}
-     {{rental-tile rental=rental destroyRental="destroyRental"}}<br>
+  {{#each model as |announcement|}}
+    {{new-announcement announcement=announcement}}
+    <li><h2>{{announcement.title}}</h2><br>{{announcement.body}}</li>
   {{/each}}
 </ul>
 
-{{new-rental saveRental2="saveRental3"}}
+{{new-announcement saveAnnouncement2="saveAnnouncement3"}}
 
 {{#link-to 'about' class='btn btn-info'}}About Us{{/link-to}}
 {{#link-to 'contact' class='btn btn-info'}}Contact Us{{/link-to}}
-{{#link-to 'announcement' class='btn btn-info'}}Announcements{{/link-to}}
 </div>

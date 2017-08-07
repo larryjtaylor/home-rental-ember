@@ -5,8 +5,13 @@
 
 .jumbotron {
   background-image: url(http://img.decoratingdecorandmore.com/2017/05/16/-l-334ad33129c71418.jpg);
+
 }
 
-.heading {
-  color: white;
+#heading {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  font-family: cursive;
+  font-size: 100px;
 }
