@@ -1,21 +1,23 @@
 <div class='container'>
-<h1>Important Announcements</h1>
+  <div class="well well-md">
+    <h1>Important Announcements</h1>
 
-<h2>Urgent information regarding your property/reservations</h2>
+    <h2>Urgent information regarding your property/reservations</h2>
 
-<ul>
-  {{#each model as |announcement|}}
-    <li id='list'><h2>{{announcement.title}}</h2></li>
-      <ul class='list-unstyled'>
-        <li>{{announcement.body}}</li>
-      </ul><br>
-    {{delete-announcement announcement=announcement destroyAnnouncement='destroyAnnouncement'}}
-  {{/each}}
-</ul><br>
+    <ul>
+      {{#each model as |announcement|}}
+        <li id='list'><h2>{{announcement.title}}</h2></li>
+          <ul class='list-unstyled'>
+            <li>{{announcement.body}}</li>
+          </ul><br>
+        {{delete-announcement announcement=announcement update="update" destroyAnnouncement='destroyAnnouncement'}}
+      {{/each}}
+    </ul><br>
 
-{{new-announcement saveAnnouncement="saveAnnouncement"}}
+    {{new-announcement saveAnnouncement="saveAnnouncement"}}
 
-{{#link-to 'about' class='btn btn-info'}}About Us{{/link-to}}
-{{#link-to 'contact' class='btn btn-info'}}Contact Us{{/link-to}}
-{{#link-to 'index' class='btn btn-info'}}Home{{/link-to}}
+    {{#link-to 'about' class='btn btn-info'}}About Us{{/link-to}}
+    {{#link-to 'contact' class='btn btn-info'}}Contact Us{{/link-to}}
+    {{#link-to 'index' class='btn btn-info'}}Home{{/link-to}}
+  </div>
 </div>

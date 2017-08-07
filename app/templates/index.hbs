@@ -1,17 +1,19 @@
 <div class='container'>
-<h1> Welcome to Rentopolis </h1>
+  <div class="well well-md">
+    <h1> Welcome to Rentopolis </h1>
 
-<p>There's no place like home... but there's no home like Nome.</p>
+    <p>There's no place like home... but there's no home like Nome.</p>
 
-<ul class="list-unstyled">
-  {{#each model as |rental|}}
-    {{rental-tile rental=rental}}<br>
-  {{/each}}
-</ul>
+    <ul class="list-unstyled">
+      {{#each model as |rental|}}
+      {{rental-tile rental=rental}}<br>
+      {{/each}}
+    </ul>
 
-{{new-rental saveRental2="saveRental3"}}
+    {{new-rental saveRental2="saveRental3"}}
 
-{{#link-to 'about'}}<h3 class='btn btn-info'>About Us</h3>{{/link-to}}
-{{#link-to 'contact'}}<h3 class='btn btn-info'>Contact Us</h3>{{/link-to}}
-{{#link-to 'announcement'}}<h3 class='btn btn-info'>Announcements</h3>{{/link-to}}
-</div>
+    {{#link-to 'about'}}<h3 class='btn btn-info'>About Us</h3>{{/link-to}}
+    {{#link-to 'contact'}}<h3 class='btn btn-info'>Contact Us</h3>{{/link-to}}
+    {{#link-to 'announcement'}}<h3 class='btn btn-info'>Announcements</h3>{{/link-to}}
+  </div>
+  </div>
