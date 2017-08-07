@@ -38,10 +38,10 @@ export default Ember.Route.extend({
       rental.destroyRecord();
       this.transitionTo('index');
     },
-    saveAnnouncement3(params) {
-      var newAnnouncement = this.store.createRecord('announcement', params);
-      newAnnouncement.save();
-      this.transitionTo('announcement');
-    }
+    // saveAnnouncement(params) {
+    //   var newAnnouncement = this.store.createRecord('announcement', params);
+    //   newAnnouncement.save();
+    //   this.transitionTo('announcement');
+    // }
   }
 });

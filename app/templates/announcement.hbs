@@ -11,13 +11,16 @@
 
 <ul>
   {{#each model as |announcement|}}
-    {{new-announcement announcement=announcement}}
-    <li><h2>{{announcement.title}}</h2><br>{{announcement.body}}</li>
+    <li><h2>{{announcement.title}}</h2></li>
+      <ul class='list-unstyled'>
+        <li>{{announcement.body}}</li>
+      </ul>
   {{/each}}
-</ul>
+</ul><br>
 
-{{new-announcement saveAnnouncement2="saveAnnouncement3"}}
+{{new-announcement saveAnnouncement="saveAnnouncement"}}
 
 {{#link-to 'about' class='btn btn-info'}}About Us{{/link-to}}
 {{#link-to 'contact' class='btn btn-info'}}Contact Us{{/link-to}}
+{{#link-to 'index' class='btn btn-info'}}Home{{/link-to}}
 </div>
