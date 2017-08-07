@@ -15,3 +15,15 @@
   font-family: cursive;
   font-size: 100px;
 }
+
+.well-md {
+  width: 50%;
+}
+
+#list {
+  list-style: none;
+}
+
+.rentalButtons {
+  display: inline;
+}

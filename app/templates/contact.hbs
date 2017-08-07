@@ -1,24 +1,26 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <div class="jumbotron">
-  <h1 class='heading'>Rentopolis</h1>
+  <h1 id='heading'>Rentopolis</h1>
 </div>
 <div class='container'>
-<p>Rentopolis representatives would love to help you choose a destination or answer any boring questions you may have.</p>
+  <div class="well well-md">
+    <p>Rentopolis representatives would love to help you choose a destination or answer any boring questions you may have.</p>
 
-<p>Contact us today!</p>
+    <p>Contact us today!</p>
 
-<p>
-  Second Door on the Left<br>
-  House in a Field<br>
-  1212 Random Avenue<br>
-  Calla's House, OR 97233
-</p>
+    <p>
+      Second Door on the Left<br>
+      House in a Field<br>
+      1212 Random Avenue<br>
+      Calla's House, OR 97233
+    </p>
 
-<p>(503) 555-1212</p>
+    <p>(503) 555-1212</p>
 
-<p>dontemailme@rentopolis.com</p>
+    <p>dontemailme@rentopolis.com</p>
+  </div>
 
-{{#link-to 'about'}}About Us{{/link-to}}
-{{#link-to 'index'}}Home{{/link-to}}
+  {{#link-to 'about'}}<h2 class='btn btn-success'>About Us</h2>{{/link-to}}
+  {{#link-to 'index'}}<h2 class='btn btn-success'>Home</h2>{{/link-to}}
 </div>

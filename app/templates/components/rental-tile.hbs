@@ -1,12 +1,13 @@
-<link rel="stylesheet" href="/../../styles/app.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/../styles/app.css" type="text/css">
 
 <li>
   {{rental.owner}}'s {{rental.type}} in {{rental.city}}
   {{#if isImageShowing}}
     <p><img src={{rental.image}} alt={{rental.type}} {{action "imageHide"}} class='housePic'></p>
   {{else}}
-    <button {{action "imageShow"}} class='btn btn-success'>Show image</button>
+    <button {{action "imageShow"}} class='btn btn-success rentalButtons'>Show image</button>
   {{/if}}
   {{update-rental rental=rental update="update"}}
-  <button {{action 'delete' rental}} class='btn btn-danger'>Delete Rental</button>
+  <button {{action 'delete' rental}} class='btn btn-danger rentalButtons'>Delete Rental</button>
 </li>
