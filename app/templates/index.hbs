@@ -4,6 +4,8 @@
 
     <p>There's no place like home... but there's no home like Nome.</p>
 
+    <h3>Here are our available rentals:</h3>
+
     <ul class="list-unstyled">
       {{#each model as |rental|}}
       {{rental-tile rental=rental}}<br>
@@ -11,6 +13,16 @@
     </ul>
 
     {{new-rental saveRental2="saveRental3"}}
+
+    <h2> All Reviews </h2>
+
+    <ul>
+      {{#each model.reviews as |review|}}
+        <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
+      {{/each}}
+    </ul>
+
+    {{new-review saveReview="saveReview"}}
 
     {{#link-to 'about'}}<h3 class='btn btn-info'>About Us</h3>{{/link-to}}
     {{#link-to 'contact'}}<h3 class='btn btn-info'>Contact Us</h3>{{/link-to}}
