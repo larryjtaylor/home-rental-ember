@@ -15,7 +15,9 @@ body {
 }
 
 .jumbotron {
-  background-image: url(http://img.decoratingdecorandmore.com/2017/05/16/-l-334ad33129c71418.jpg);
+  background-image: url('http://www.f-covers.com/cover/old-and-cracked-wood-pattern-facebook-cover-timeline-banner-for-fb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #heading {
